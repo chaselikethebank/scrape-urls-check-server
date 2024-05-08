@@ -2,6 +2,8 @@ const fs = require('fs');
 const axios = require('axios');
 const cheerio = require('cheerio');
 const { URL } = require('url');
+// const initialBaseUrl = 'add your base url here and comment the line back it';
+
 
 async function crawlWebsite(baseUrl, maxDepth = 3) {
     const visitedUrls = new Set();
@@ -51,5 +53,4 @@ function resolveUrl(baseUrl, href) {
     }
 }
 
-const initialBaseUrl = 'https://www.thewoodlandsmethodist.org/';
 crawlWebsite(initialBaseUrl);

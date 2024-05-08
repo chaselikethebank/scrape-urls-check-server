@@ -5,6 +5,9 @@ const { execSync } = require('child_process');
 const rawData = fs.readFileSync('discoveredUrls.json');
 const urls = JSON.parse(rawData);
 
+fs.writeFileSync('serverResponses.txt', '');
+
+
 // Iterate over each URL
 urls.forEach(url => {
     // Run curl operation
