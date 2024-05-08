@@ -22,13 +22,17 @@ This program is designed to crawl a website, discover its internal URLs, and che
 1. First, install the dependencies:
 
 npm install
- 
 
-2. Run the program:
+
+2. Add the url you are hoping to gather the children of to the build.js file on line 6
+// const initialBaseUrl = 'add your base url here and comment the line back it';
+
+
+3. Run the program:
 
 node server.js
 
-3. Review the log @ serverResponse.txt
+4. Review the log @ serverResponse.txt
 
 ## Components
 
